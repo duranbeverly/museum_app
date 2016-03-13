@@ -14,7 +14,7 @@
       <tr>
         <td><%= image_tag painting.image %></td>
         <td><%= painting.title %></td>
-        <td><%= link_to painting.artist.name, artist_painting_path(params[painting.artist]) %></td>
+        <td><%= link_to painting.artist.name, artist_paintings_path(painting.artist) %></td>
         <td><%= painting.style %></td>
       </tr>
     <% end %>
